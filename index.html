@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
+    <title>Teste Frontend Viskoo</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="uk-container uk-flex uk-flex-middle ">
+            <div class="uk-container">
+                <a href="#"><img src="./assets/logo.svg" alt="logo"></a>
+            </div>
+            <nav class="uk-container uk-navbar">
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav uk-visible@s">
+                        <li class="uk-parent menu act"><a href="#">Home</a></li>
+                        <li class="uk-parent menu act"><a href="#">Produtos</a></li>
+                        <li class="uk-parent menu act"><a href="#">Serviços</a></li>
+                        <li class="uk-parent menu act"><a href="#">Contato</a></li>
+                    </ul>
+                    <div>
+                        <a class="uk-flex uk-flex-middle uk-margin-small-left" href="#"><img
+                                src="./assets/rede-social.svg" alt="social"></a>
+                    </div>
+
+                    <a href="#" id="icon-menu" class="uk-navbar-toggle uk-hidden@s uk-padding-small"
+                        uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+                </div>
+            </nav>
+        </div>
+        <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+            <div class="uk-offcanvas-bar header">
+                <ul class=" uk-nav">
+                    <li class="uk-parent menu act"><a class="uk-text-large" href="#">Home</a></li>
+                    <li class="uk-parent menu act"><a class="uk-text-large" href="#">Produtos</a></li>
+                    <li class="uk-parent menu act"><a class="uk-text-large" href="#">Serviços</a></li>
+                    <li class="uk-parent menu act"><a class="uk-text-large" href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+
+        <div class="section1 ">
+            <div class="flex-column uk-flex uk-flex-middle uk-flex-center uk-position-relative uk-visible-toggle
+                uk-light" tabindex="-1" uk-slideshow>
+                <div class="monster3 uk-margin-large-right">
+                    <img src=" ./assets/monster3.svg" alt="monsters">
+                </div>
+                <div class="monster3 uk-margin-large-right">
+                    <h2>Esse site é um teste,</br>
+                        não é nem um</br>
+                        bicho de 7 cabeças
+                    </h2>
+                    <h3><strong>Muito menos um monstro!</br>
+                            Aprovando vamos comemorar!
+                        </strong>
+                    </h3>
+                </div>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                    uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                    uk-slideshow-item="next"></a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="uk-section uk-light section2">
+            <div class="uk-container ">
+                <div class="uk-text-center@s">
+                    <h3>Essas três imagens abaixo precisam abrir em lightbox</h3>
+                    <h3><strong>Pega um café, curta a documentação e implemente um lightbox top</strong></h3>
+                </div>
+                <div class="uk-container uk-flex uk-flex-center uk-padding-small">
+                    <div uk-lightbox class="uk-width-1-6@m uk-padding-small">
+                        <a href="./assets/monsterBlue2.svg" data-alt="monster Blue">
+                            <img src="./assets/monsterBlue2.svg" alt="monster Blue">
+                        </a>
+                    </div>
+                    <div uk-lightbox class="uk-width-1-6@m uk-padding-small">
+                        <a href="./assets/monsterRoxo2.svg" data-alt="monster Roxo">
+                            <img src="./assets/monsterRoxo2.svg" alt="monster Roxo">
+                        </a>
+                    </div>
+                    <div uk-lightbox class="uk-width-1-6@m uk-padding-small">
+                        <a href="./assets/monsterOrange2.svg" data-alt="monster Orange">
+                            <img src="./assets/monsterOrange2.svg" alt="monster Orange">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="uk-section uk-section-default">
+            <div class="uk-container">
+                <div class="uk-container uk-flex uk-flex-center uk-flex-middle">
+                    <div class="uk-padding-large" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                        <h4 class="uk-padding-small">
+                            <strong>Scrool Animation é muito bonito<br>
+                                e trás uma sensação satisfatória ao navegar
+                            </strong>
+                        </h4>
+                        <p class="uk-text-muted">
+                            o Scrollspy é um recurso de scroll. Aplique nos </br>
+                            elementos a partir dessa sessão
+                        </p>
+                    </div>
+                    <div uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                        <img class="uk-align-center" src="./assets/monsterBlue.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="uk-section-default">
+            <div class="uk-container">
+                <div class="uk-container uk-flex uk-flex-center uk-flex-middle">
+                    <div uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                        <img class="uk-align-center" src=" ./assets/monsterRoxo.svg" alt="monster Roxo">
+                    </div>
+                    <div class="uk-padding-large" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                        <h4 class="txt-center">
+                            <strong>Scrool Animation é muito bonito<br>
+                                e trás uma sensação satisfatória ao navegar
+                            </strong>
+                        </h4>
+                        <p class="uk-text-muted txt-center">
+                            o Scrollspy é um recurso de scroll. Aplique nos </br>
+                            elementos a partir dessa sessão
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-section-default">
+            <div class="uk-container">
+                <div class="uk-container uk-flex uk-flex-center uk-flex-middle">
+                    <div class="uk-padding-large" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                        <h4 class="uk-padding-small">
+                            <strong>Scrool Animation é muito bonito<br>
+                                e trás uma sensação satisfatória ao navegar
+                            </strong>
+                        </h4>
+                        <p class="uk-text-muted">
+                            o Scrollspy é um recurso de scroll. Aplique nos </br>
+                            elementos a partir dessa sessão
+                        </p>
+                    </div>
+                    <div uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+                        <img class="uk-align-center " src="./assets/monsterOrange.svg" alt="monster Orange">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="isolado">
+        <img class="uk-position-relative uk-align-center uk-align-right@m uk-margin-remove-adjacent uk-margin-right pd-whats"
+            src="./assets/whats.svg" width="80">
+    </div>
+
+    <footer>
+        <div class="uk-container flex-column uk-flex uk-flex-center uk-margin-medium-right">
+            <div
+                class="uk-container uk-margin-right-small uk-margin-small-bottom uk-padding-small uk-flex uk-flex-center uk-flex-middle">
+                <img src="./assets/logo-rede-social.svg" alt="">
+            </div>
+            <div class="uk-flex uk-flex-center uk-flex-middle">
+                <div>
+                    <ul class="uk-list uk-list-collapse uk-text-small uk-padding-small">
+                        <li>Home</li>
+                        <li>Produtos</li>
+                        <li>Serviços</li>
+                        <li>Contato</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="uk-list uk-list-collapse uk-text-small uk-padding-small">
+                        <li>Termos e condiçoes</li>
+                        <li>Informações adicionais</li>
+                        <li>Onde Comprar</li>
+                        <li>Saiba mais</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-container uk-padding-small uk-margin-medium-right">
+                <img src="./assets/app-store.svg" alt="app-store">
+            </div>
+        </div>
+        <div class="uk-flex uk-margin-large-top uk-padding-large uk-padding-remove-bottom">
+            <hr class="division">
+        </div>
+        <div class="uk-flex uk-flex-center uk-padding-small">
+            <img class="uk-padding-small" src="./assets/rede-social.svg" alt="">
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
+</body>
+
+</html>
