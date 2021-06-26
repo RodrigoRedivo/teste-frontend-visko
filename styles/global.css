@@ -113,3 +113,7 @@ footer ul li {
     margin: 0;
   }
 }
+
+.bd {
+  border: 2px solid red;
+}
